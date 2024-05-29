@@ -21,6 +21,10 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+
+/* task-1 */
+
 #categories {
   background: #fff;
   border-radius: 8px;
@@ -77,3 +81,76 @@ h2 {
   color: #2e2f42;
   padding: 8px 0 8px 16px;
 }
+
+/* task-2 */
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 10px);
+  box-sizing: border-box;
+}
+
+.gallery-image {
+  width: 360px;
+  height: auto;
+  display: block;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* task-3 */
+
+.form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 136px;
+}
+input {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    padding: 8px 0 8px 16px;
+}
+h1, span {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+
+
+/* task-4 */
+
+/* task-5 */
+
+/* task-6 */
