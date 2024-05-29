@@ -21,7 +21,9 @@ ul {
   padding: 0;
   list-style: none;
 }
-
+button {
+  cursor: pointer;
+}
 
 /* task-1 */
 
@@ -118,7 +120,7 @@ button {
 
 /* task-3 */
 
-.form {
+.container {
   background: #fff;
   border-radius: 8px;
   padding: 24px;
@@ -131,7 +133,15 @@ input {
     width: 360px;
     height: 40px;
 }
+
 input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+.text {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -147,10 +157,87 @@ h1, span {
     color: #2e2f42;
 }
 
-
-
 /* task-4 */
+
+.login-form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    width: 408px;
+    height: 256px;
+}
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin: 8px 0;
+  padding: 8px 0 8px 16px;
+}
+input:hover {
+  border: 1px solid #000;
+ }
+
+ input:active:placeholder {
+    content: "Type area";
+    font-family: "Montserrat", "Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    border: 1px solid #2e2f42;
+ }
+ 
+label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+   }
+button {
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 86px;
+    height: 40px;
+    background: #4e75ff;
+    border: none;
+    margin-top: 8px;
+}
+ button:hover,
+ button:focus {
+  background: #6c8cff;
+ }
+.text-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
 
 /* task-5 */
 
+.widget {
+    border-radius: 8px;
+    padding: 100px 88px;
+    width: 345px;
+    height: 280px;
+    background: #fff;
+    padding: 100px 88px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+.change-color {
+  margin-top: 16px;
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 148px;
+    height: 40px;
+    background: #4e75ff;
+}
 /* task-6 */
