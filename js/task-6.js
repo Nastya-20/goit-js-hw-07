@@ -19,13 +19,16 @@
     destroyButton.addEventListener('click', destroyBoxes);
 
     function createBoxes(amount) {
-      destroyBoxes();
       const fragment = document.createDocumentFragment();
+      const currentBoxesCount = boxes.children.length;
+      let lastBoxSize = currentBoxesCount > 0 
+                ? parseInt(boxes.lastElementChild.style.width) 
+                : 20;
       for (let i = 0; i < amount; i++) {
         const box = document.createElement('div');
-        const size = 30 + i * 10;
-        box.style.width = `${size}px`;
-        box.style.height = `${size}px`;
+        lastBoxSize += 10;
+        box.style.width = `${lastBoxSize}px`;
+        box.style.height = `${lastBoxSize}px`;
         box.style.backgroundColor = getRandomHexColor();
         fragment.appendChild(box);
       }

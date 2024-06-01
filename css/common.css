@@ -129,14 +129,17 @@ button {
   width: 408px;
   height: 136px;
 }
-input {
+#name-input {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-input::placeholder {
+#name-input::placeholder {
   font-family: "Montserrat", "Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -159,6 +162,7 @@ h1 {
   line-height: 133%;
   letter-spacing: 0.04em;
   color: #2e2f42;
+  margin: 0;
 }
  #name-output {
   font-weight: 600;
@@ -176,8 +180,14 @@ h1 {
   padding: 24px;
   width: 408px;
   height: 256px;
+  font-family: "Montserrat", "Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
-input {
+.email {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
@@ -185,11 +195,11 @@ input {
   margin: 8px 0;
   padding: 8px 0 8px 16px;
 }
-input:hover {
+.email:hover {
   border: 1px solid #000;
  }
 
- input:active:placeholder {
+.email:active:placeholder {
   content: "Type area";
   font-family: "Montserrat", "Regular", sans-serif;
   font-weight: 400;
@@ -198,16 +208,16 @@ input:hover {
   letter-spacing: 0.04em;
   border: 1px solid #2e2f42;
  }
- 
-label {
-font-family: "Montserrat", "SemiBold", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
- }
-button {
+.pass {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin: 8px 0;
+  padding: 8px 0 8px 16px;
+}
+
+.text-btn {
   border-radius: 8px;
   padding: 8px 16px;
   width: 86px;
@@ -215,19 +225,18 @@ button {
   background: #4e75ff;
   border: none;
   margin-top: 8px;
-}
- button:hover,
- button:focus {
-  background: #6c8cff;
- }
-.text-btn {
-  font-family: "Montserrat", "Regular", sans-serif;
+  font-family: "Montserrat", "Medium", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
 }
+.text-btn:hover,
+.text-btn:focus {
+  background: #6c8cff;
+ }
+
 
 
 /* task-5 */
@@ -255,14 +264,13 @@ button {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-button {
+.change-color {
   margin: 0 auto;
   border-radius: 8px;
+  border: none;
   width: 148px;
   height: 40px;
   background: #4e75ff;
-}
-.change-color {
   padding: 8px 0;
   font-family: "Montserrat", "Medium", sans-serif;
   font-weight: 500;
@@ -272,6 +280,91 @@ button {
   color: #fff;
 }
 
-
+.change-color:hover {
+  background-color: #6c8cff;
+}
 /* task-6 */
 
+.wrapper {
+  border-radius: 8px;
+  padding: 24px;
+  width:534px;
+  height: auto;
+  background-color: #fff;
+}
+
+#controls {
+  background: #f6f6fe;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap:16px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: auto;
+  margin-bottom: 16px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input {
+  margin: 0;
+  width: 150px;
+  padding: 8px 55px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  font-family: "Montserrat", "Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+   сolor: #2e2f42;
+}
+button {
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    background: #4e75ff;
+}
+.controls-creat {
+  font-family: "Montserrat", "Medium", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border: none;
+}
+.controls-creat:hover {
+  background: #6c8cff;
+}
+.controls-dest {
+  font-family: "Montserrat", "Medium", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    background: #ff4e4e;
+    color: #fff;
+    border: none;
+}
+.controls-dest:hover {
+  background: #ff7070;
+}
+#boxes {
+  background: #f6f6fe;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 44px;
+ }
