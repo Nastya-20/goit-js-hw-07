@@ -88,36 +88,25 @@ h2 {
 
 /* task-2 */
 
-.gallery-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
 .gallery {
   display: flex;
-  flex-wrap: nowrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 24px;
-}
-
-.gallery-item {
-  flex: 1 1 calc(33.333% - 10px);
-  box-sizing: border-box;
-}
-
-.gallery-image {
-  width: 360px;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  width: 1440px;
   height: auto;
-  display: block;
+  background: #fff;
+  list-style: none;
+  padding: 100px 156px;
 }
 
-button {
-  padding: 10px;
-  cursor: pointer;
+.gallery li {
+  flex: calc(100% - 48px) / 2;
+}
+
+.gallery img {
+  width: 360px;
+  height: 300px;
+  display: block;
 }
 
 /* task-3 */
@@ -325,36 +314,36 @@ input {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.04em;
-   сolor: #2e2f42;
+  сolor: #2e2f42;
 }
 button {
   border-radius: 8px;
-    padding: 8px 16px;
-    width: 120px;
-    height: 40px;
-    background: #4e75ff;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #4e75ff;
 }
 .controls-creat {
   font-family: "Montserrat", "Medium", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.04em;
-    color: #fff;
-    border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
 }
 .controls-creat:hover {
   background: #6c8cff;
 }
 .controls-dest {
   font-family: "Montserrat", "Medium", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.04em;
-    background: #ff4e4e;
-    color: #fff;
-    border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  background: #ff4e4e;
+  color: #fff;
+  border: none;
 }
 .controls-dest:hover {
   background: #ff7070;
